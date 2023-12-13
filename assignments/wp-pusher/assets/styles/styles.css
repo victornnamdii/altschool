@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100wv;
+  height: 100vh;
+  background-color: rgba(245, 248, 250, 1);
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  width: 438px;
+  height: 52px;
+  background-color: rgba(3, 142, 125, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  margin-block-start: 39px;
+  margin-inline: 48.5px;
+}
+
+.container {
+  width: 1440px;
+  height: 1170px;
+  margin: 0 auto;
+  padding-inline: 40px;
+  font-family: "Lato", sans-serif;
+}
+
+.headerInfo {
+  width: 1360px;
+  height: 73px;
+  margin-block-start: 28px;
+  border-block-end: 2px solid rgba(224, 230, 234, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerInfo > img {
+  width: 200px;
+  height: 39px;
+}
+
+.headerInfo > ul {
+  display: flex;
+  align-items: center;
+}
+
+.headerInfo > ul li {
+  list-style: none;
+  margin-inline-start: 44px;
+}
+
+.headerInfo > ul li.account {
+  border: 2px solid rgba(100, 110, 122, 1);
+  padding-inline: 11px;
+  padding-block: 12px;
+}
+
+.headerInfo > ul li a {
+  color: rgba(29, 44, 60, 1);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-body {
+  width: 892px;
+  height: 795px;
+  margin: 0 auto;
+  margin-block-start: 85px;
+  border-radius: 6px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
+    0px 15px 35px 0px rgba(43, 64, 78, 0.1);
+
+  display: flex;
+}
+
+.left-section {
+  width: 580px;
+  height: 795px;
+  font-family: "Lato", sans-serif;
+}
+
+.left-section h1 {
+  width: 161px;
+  height: 54px;
+  color: rgba(29, 44, 60, 1);
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  margin-block-start: 41px;
+  margin-inline-start: 48px;
+  margin-block-end: 24px;
+}
+
+.basicInfo {
+  border-block: 2px solid rgba(224, 230, 234, 1);
+  padding-block-start: 36px;
+  padding-block-end: 41px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block-end: 9px;
+}
+
+.circle {
+  color: rgba(84, 139, 197, 1);
+  border: 2px solid rgba(84, 139, 197, 1);
+  border-radius: 50%;
+  padding: 6px 12px;
+}
+
+.title > p {
+  width: 240px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.title,
+.name,
+.email {
+  margin-inline: 48.5px;
+}
+
+.name fieldset {
+  border: none;
+}
+
+.checkout-form label {
+  width: 187px;
+  height: 17px;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  margin-block-end: 7px;
+}
+
+.checkout-form input {
+  width: 227px;
+  height: 36px;
+  background-color: rgba(237, 239, 242, 1);
+  color: rgba(100, 110, 122, 1);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding-inline: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.checkout-form .email > label {
+  margin-block-start: 15px;
+}
+
+.checkout-form .email > input {
+  width: 484px;
+}
+
+.left-section .card {
+  margin-block-start: 33px;
+}
+
+.cardInfo {
+  padding-inline: 48.5px;
+  padding-block-end: 41px;
+  border-block-end: 2px solid rgba(224, 230, 234, 1);
+}
+
+.cardDetails {
+  display: flex;
+  align-items: center;
+}
+
+.cardDetails .cardNumber {
+  width: 270px;
+}
+
+.cardDetails .expiryDate {
+  width: 90px;
+}
+
+.cardDetails .cvc {
+  width: 78px;
+}
+
+.stripe {
+  width: 92px;
+  height: 20.101px;
+  margin-inline-start: 210px;
+}
+
+.right-section {
+  width: 312px;
+  height: 795px;
+  background-color: rgba(17, 121, 191, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Lato", sans-serif;
+  padding-block-start: 42px;
+  padding-inline: 44px;
+}
+
+.pricingInfo {
+  padding-block-end: 42px;
+  border-block-end: 2px solid rgba(255, 255, 255, 1);
+
+  > .renew {
+    width: 160px;
+    line-height: 24px;
+    margin-block-start: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-block-end: 36px;
+  }
+
+  > .pricingInfo-benefits {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+
+  .middle {
+    padding-block: 16px;
+  }
+
+  > .agency {
+    margin-block-start: 38px;
+    color: rgba(255, 255, 255, 1);
+
+    > p {
+      font-size: 16px;
+      font-weight: 400;
+      margin-block-end: 12px;
+
+      > span {
+        font-weight: 700;
+      }
+    }
+
+    > a {
+      color: rgba(255, 255, 255, 1);
+      font-size: 16px;
+      font-weight: 700;
+
+      > span {
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.freelancer {
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pricing {
+  padding-block-end: 3px;
+}
+
+.price {
+  display: flex;
+  gap: 10px;
+  vertical-align: top;
+  margin-block-start: 18px;
+
+  > .dollar {
+    width: 14px;
+    height: 29px;
+  }
+
+  > .annualPricing {
+    width: 121px;
+    height: 72px;
+  }
+}
+
+.help {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-inline-start: 80px;
+  margin-block-start: 23px;
+  margin-block-end: 31px;
+}
+
+.help > p {
+  height: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(29, 44, 60, 1);
+
+  > span {
+    font-weight: 400;
+    color: rgba(100, 110, 122, 1);
+
+    a {
+      color: rgba(100, 110, 122, 1);
+      text-decoration-color: rgba(100, 110, 122, 1);
+    }
+  }
+}
+
+.review {
+  padding-block-start: 41px;
+}
+
+.review-text {
+  padding-inline-start: 2px;
+
+  > p {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 24px;
+
+    > span {
+      font-weight: 700;
+    }
+  }
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-block-start: 27px;
+
+  > img {
+    border-radius: 50%;
+  }
+
+  > p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.terms-text {
+  text-align: center;
+  margin-block-start: 33px;
+}
+
+.terms-text > p {
+  color: rgba(99, 107, 111, 1);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.terms-text > p > a {
+  color: rgba(49, 112, 143, 1);
+}
+
+.question-mark-icon {
+  width: 20px;
+  height: 20px;
+}
