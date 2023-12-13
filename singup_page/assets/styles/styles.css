@@ -251,38 +251,35 @@ a {
   font-style: normal;
 }
 
-input:hover, select:hover, #password:hover {
-    border: 1px solid hsla(174, 62%, 47%, 1);
-    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
-    outline: none;
-}
-
-input:focus, select:focus, #password:focus {
-    border: 1px solid hsla(174, 62%, 47%, 1);
-    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
-    outline: none;
+input:hover,
+input:focus,
+select:hover,
+select:focus,
+#password:hover,
+#password:focus {
+  border: 1px solid hsla(174, 62%, 47%, 1);
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+  outline: none;
 }
 
 .password-container {
-    position: relative;
-  }
-  
-  #showPassword {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  #togglePassword {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 1.2em;
-  }
-  
+  position: relative;
+}
 
+#showPassword {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#togglePassword {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2em;
+}
 
 @media screen and (max-width: 768px) {
   .container {
@@ -317,7 +314,7 @@ input:focus, select:focus, #password:focus {
     height: 48px;
   }
 
-  .terms p{
+  .terms p {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
