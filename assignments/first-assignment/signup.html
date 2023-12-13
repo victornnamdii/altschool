@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AltSchool Sign Up</title>
+    <style>
+      body {
+        font-family: AlmarenaDisplayBold, sans-serif;
+      }
+      tbody tr td {
+        padding: 15px 15px;
+        border-bottom: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html"> About Ilodiuba Victor</a>
+          </li>
+          <li>
+            <a aria-current="page" href="signup.html" target="_self">
+              Altschool Sign Up Page
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form action="" method="post">
+        <table>
+          <caption>
+            <h1>Application form</h1>
+            <p>Fill in your details</p>
+          </caption>
+
+          <tbody>
+            <tr>
+              <td>
+                <label for="firstName">
+                  First Name<span style="color: red">*</span>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id=""
+                    minlength="2"
+                    maxlength="16"
+                    required
+                  />
+                </label>
+              </td>
+
+              <td>
+                <label for="lastName">
+                  Last Name<span style="color: red">*</span>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id=""
+                    minlength="2"
+                    maxlength="16"
+                    required
+                  />
+                </label>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="gender">
+                  Gender<span style="color: red">*</span>
+                  <select name="gender" id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </label>
+              </td>
+
+              <td>
+                <label for="dob">
+                  Date of Birth<span style="color: red">*</span>
+                  <input type="date" name="dob" id="dob" />
+                </label>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="email">
+                  Email Address<span style="color: red">*</span>
+                  <input type="email" name="email" id="email" required />
+                </label>
+              </td>
+
+              <td>
+                <label for="education-level">
+                  Education Level<span style="color: red">*</span>
+                  <select name="level" id="level" required>
+                    <option value="" selected disabled>
+                      Select level of education
+                    </option>
+                    <option value="BSC">Bsc</option>
+                    <option value="MSC">Msc</option>
+                    <option value="DIPLOMA">Diploma</option>
+                    <option value="PHD">Doctorate (PhD)</option>
+                    <option value="SECONDARY">High school / Secondary</option>
+                    <option value="UG">Under graduate</option>
+                    <option value="JSS">Junion Middle / school</option>
+                    <option value="PG">Post graduate</option>
+                  </select>
+                </label>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="country">
+                  Country<span style="color: red">*</span>
+                  <select name="countries" id="" required>
+                    <option value="" selected disabled>
+                      Select your country
+                    </option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="USA">United States of America</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="Germany">Germany</option>
+                    <option value="UAE">United Arab Emirates</option>
+                  </select>
+                </label>
+              </td>
+
+              <td>
+                <label for="city-state">
+                  State/City of Residence<span style="color: red">*</span>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Enter your state of residence"
+                  />
+                </label>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="employment-status">
+                  Employment Status<span style="color: red">*</span>
+                  <select
+                    name="employment-status"
+                    id="employment-status"
+                    required
+                  >
+                    <option value="" selected disabled>
+                      Select employment status
+                    </option>
+                    <option value="employed">Employed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="self-employed">Self employed</option>
+                  </select>
+                </label>
+              </td>
+
+              <td>
+                <label for="phone">
+                  Phone Number<span style="color: red">*</span>
+                  <input
+                    type="number"
+                    name=""
+                    id=""
+                    placeholder="08123456789"
+                    required
+                  />
+                </label>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="school">
+                  Choose School<span style="color: red">*</span>
+                  <select name="school" id="school" required>
+                    <option value="" selected disabled>Select school</option>
+                    <option value="creativeBusiness">
+                      School of Creative Business
+                    </option>
+                    <option value="economy">School of Economy</option>
+                    <option value="engineering">School of Engineering</option>
+                    <option value="data">School of Data</option>
+                  </select>
+                </label>
+              </td>
+
+              <td>
+                <label for="school">
+                  Choose Course of Study<span style="color: red">*</span>
+                  <select name="course" id="course" required>
+                    <option value="" selected disabled>Select course</option>
+                    <option value="cloud">Cloud Engineering</option>
+                    <option value="Frontend">Frontend Engineering</option>
+                  </select>
+                </label>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="channel">
+                  How did you hear about us?<span style="color: red">*</span>
+                  <select name="channel" id="channel" required>
+                    <option value="" selected disabled>Select channel</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="FB">Facebook</option>
+                    <option value="Linkedin">LinkedIn</option>
+                    <option value="YT">YouTube</option>
+                    <option value="Friend">Friend</option>
+                    <option value="Whatsapp">WhatsApp</option>
+                    <option value="IG">Instrgram</option>
+                    <option value="Billboard">Billboard</option>
+                  </select>
+                </label>
+              </td>
+
+              <td>
+                <label for="phone">
+                  Scholarship/Discount code (optional)
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Scholarship or student ID or discount code"
+                    minlength="2"
+                    required
+                  />
+                </label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          By clicking continue, I agree to
+          <a
+            href="http://www.altschoolafrica.com/terms"
+            target="_blank"
+            rel="noopener"
+            >Terms of Use</a
+          >
+          and acknowledge that i have read the
+          <a
+            href="http://www.altschoolafrica.com/policy"
+            target="_blank"
+            rel="noopener"
+            >Privacy Policy.</a
+          >
+        </p>
+
+        <button type="submit">Proceed</button>
+
+        <p>
+          Already have an account?
+          <a
+            href="http://https://portal.altschoolafrica.com/auth/login"
+            target="_self"
+            >Sign In</a
+          >
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
