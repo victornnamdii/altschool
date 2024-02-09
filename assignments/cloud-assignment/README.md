@@ -42,6 +42,7 @@
 - If the line is commneted out, uncomment it
 - Change the line to `PasswordAuthentication no`
 - Press ESC to and save the new changes by typing: wq!
+- Restart the ssh service with `sudo service ssh restart`
 
 **Disable password based auth for ssh**
 - sudo vim /etc/ssh/sshd_config
@@ -50,3 +51,4 @@
 - If the line is commneted out, uncomment it
 - Change the line to `#PermitRootLogin no`
 - Press ESC to and save the new changes by typing: wq!
+- Restart the ssh service with `sudo service ssh restart`
