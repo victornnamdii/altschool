@@ -27,7 +27,7 @@
 - gzip misc.tar
 
 **Create a user and force the user to change his/her password upon login**
-- sudo adduser madu && sudo passwd --expire valentine
+- sudo adduser madu && sudo passwd --expire madu
 
 **Lock a user's password**
 - sudo passwd -S madu
