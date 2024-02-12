@@ -49,6 +49,6 @@
 - Look for the line `PermitRootLogin`
 - Press i to enter insert mode
 - If the line is commneted out, uncomment it
-- Change the line to `#PermitRootLogin no`
+- Change the line to `PermitRootLogin no`
 - Press ESC to and save the new changes by typing: wq!
 - Restart the ssh service with `sudo service ssh restart`
